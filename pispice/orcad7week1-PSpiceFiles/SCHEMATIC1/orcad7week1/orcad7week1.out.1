@@ -1,0 +1,51 @@
+
+**** 04/29/20 10:40:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad7week1"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad7week1-PSpiceFiles\SCHEMATIC1\orcad7week1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad7week1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../orcad7week1-pspicefiles/orcad7week1.lib" 
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM P 0 5 0.1 
+.MC 10 DC I(Meter) YMAX OUTPUT ALL 
+------------$
+ERROR(ORPSIM-16306): Must be a two terminal device
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD7WEEK1
+V_V1         N00212 0 DC 1.35  
+V_V2         N00290 N00241 DC 0  
+R_R5         N00290 N00276  2k TC=0,0 
+R_R8         N00212 N00219 Rbreak 25
+R_R9         0 N00219 Rbreak 470
+R_R10         N00241 N00219 RMonte1 1k
+R_R11         N00276 N00219 RMonte1 1k
+R_R12         0 N00241 RMonte1 1k
+R_R13         0 N00276 Rtherm {1k*(1+P*Pcoeff/Pnom)}
+.PARAM  pcoeff=-0.06 p=0 pnom=1.0
+
+**** RESUMING orcad7week1.cir ****
+.END
+

@@ -1,0 +1,11 @@
+* source ORCAD4WEEK4
+X_U1         N00437 N00444 V+ V- N00381 LM741
+R_R1         N00418 N00437  1k TC=0,0 
+R_R2         0 N00444  22k TC=0,0 
+R_R3         0 N00437  22k TC=0,0 
+R_R4         N00444 N00381  22k TC=0,0 
+C_C1         N00444 N00381  1n  TC=0,0 
+V_V1         N00418 0  AC 0
++SIN 0 5 1k 0 0 0
+V_V2         V+ 0 15V
+V_V3         0 V- 15V

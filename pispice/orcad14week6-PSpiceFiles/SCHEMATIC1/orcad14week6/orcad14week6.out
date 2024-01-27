@@ -1,0 +1,115 @@
+
+**** 06/16/20 12:41:25 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad14week6"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad14week6-PSpiceFiles\SCHEMATIC1\orcad14week6.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad14week6.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V5 0 -10 -1 
+.STEP LIN V_V6 -3.5 -5 -0.5 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD14WEEK6
+V_V5         N00645 0 0Vdc
+V_V6         N00691 0 0Vdc
+M_M2         N00645 N00691 0 0 IRF9140
+
+**** RESUMING orcad14week6.cir ****
+.END
+
+**** 06/16/20 12:41:25 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad14week6"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad14week6-PSpiceFiles\SCHEMATIC1\orcad14week6.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF9140         
+               PMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W    1.9          
+         VTO   -3.67         
+          KP   10.150000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD     .06066      
+          RS     .0706       
+          RG     .811        
+         RDS  444.400000E+03 
+          IS   52.230000E-18 
+          JS    0            
+           N    2            
+          PB     .8          
+        PBSW     .8          
+         CBD    2.141000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  140.000000E-09 
+        CGSO  877.200000E-12 
+        CGDO  369.300000E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+          UO  300            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+
+          JOB CONCLUDED
+
+**** 06/16/20 12:41:25 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad14week6"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad14week6-PSpiceFiles\SCHEMATIC1\orcad14week6.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     V_V6 =   -5     
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .17
+

@@ -1,0 +1,43 @@
+
+**** 06/16/20 13:27:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad14week9"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad14week9-PSpiceFiles\SCHEMATIC1\orcad14week9.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad14week9.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 1k 1 10k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD14WEEK9
+R_R1         0 N00111  1k TC=0,0 
+C_C1         0 N00111  2u  TC=0,0 
+L_L1         N00111 0  2m  
+V_V1         N00111 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING orcad14week9.cir ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_V1. You may break the loop by adding a series resistance
+

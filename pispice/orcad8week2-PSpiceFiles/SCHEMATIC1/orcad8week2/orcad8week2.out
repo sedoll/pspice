@@ -1,0 +1,152 @@
+
+**** 05/04/20 22:38:57 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad8week2"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad8week2-PSpiceFiles\SCHEMATIC1\orcad8week2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad8week2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2.5m 0 
+.STEP PARAM rval LIST 1k, 10k, 100k 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD8WEEK2
+V_V1         N00129 0  
++PULSE 0 1 0.5m 0.1n 0.1n 1m 2m
+R_R1         N00129 N00148  10k TC=0,0 
+R_R2         0 N00148  {rval} TC=0,0 
+.PARAM  rval=1k
+
+**** RESUMING orcad8week2.cir ****
+.END
+
+**** 05/04/20 22:38:57 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad8week2"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad8week2-PSpiceFiles\SCHEMATIC1\orcad8week2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVAL =    1.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00129)    0.0000 (N00148)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 05/04/20 22:38:57 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad8week2"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad8week2-PSpiceFiles\SCHEMATIC1\orcad8week2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVAL =   10.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00129)    0.0000 (N00148)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 05/04/20 22:38:57 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad8week2"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad8week2-PSpiceFiles\SCHEMATIC1\orcad8week2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVAL =  100.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00129)    0.0000 (N00148)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/04/20 22:38:57 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad8week2"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad8week2-PSpiceFiles\SCHEMATIC1\orcad8week2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM RVAL =  100.0000E+03
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

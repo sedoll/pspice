@@ -1,0 +1,12 @@
+* source ORCAD11WEEK1
+V_V1         N00356 0  
++SIN 0 12 60 0 0 0
+V_V2         0 N00370  
++SIN 0 12V 60 0 0 0
+D_D1         0 N00251 Dbreak 
+D_D2         0 N00255 Dbreak 
+D_D3         N00251 N00227 Dbreak 
+D_D4         N00255 N00227 Dbreak 
+R_R1         N00356 N00251  1 TC=0,0 
+R_R2         N00370 N00255  1 TC=0,0 
+C_C1         0 N00227  1m  TC=0,0 

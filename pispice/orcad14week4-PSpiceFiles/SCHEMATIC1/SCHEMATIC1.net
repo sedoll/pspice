@@ -1,0 +1,4 @@
+* source ORCAD14WEEK4
+V_V1         N00106 0 0
+R_R1         0 N00099  1k TC=0,0 
+D_D1         N00106 N00099 D1N750 

@@ -1,0 +1,5 @@
+* source ORCAD5WEEK
+V_V1         N00148 0 DC 10 AC 0 
+R_R1         N00148 N00120  1k TC=0,0 
+R_R2         0 N00120  1k TC=0,0 
+C_C1         0 N00120  1n  TC=0,0 

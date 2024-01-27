@@ -1,0 +1,62 @@
+
+**** 04/20/20 23:32:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week4"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad6week4-PSpiceFiles\SCHEMATIC1\orcad6week4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad6week4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 50m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD6WEEK4
+V_V1         N00249 N00274  
++SIN 0 170V 60Hz 0 0 0
+L_L1         N00249 N00256  1m  
+L_L2         N00301 N00326  1u  
+R_R1         N00256 N00260  1m TC=0,0 
+R_R2         N00344 N00326  20 TC=0,0 
+C_C1         N00344 N00326  1m  TC=0,0 
+D_D1         N00260 N00301 Dbreak 
+D_D2         N00274 N00301 Dbreak 
+D_D3         N00344 N00274 Dbreak 
+D_D4         N00344 N00260 Dbreak 
+
+**** RESUMING orcad6week4.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00249 is floating
+
+ERROR(ORPSIM-15142): Node N00274 is floating
+
+ERROR(ORPSIM-15142): Node N00256 is floating
+
+ERROR(ORPSIM-15142): Node N00301 is floating
+
+ERROR(ORPSIM-15142): Node N00326 is floating
+
+ERROR(ORPSIM-15142): Node N00260 is floating
+
+ERROR(ORPSIM-15142): Node N00344 is floating
+

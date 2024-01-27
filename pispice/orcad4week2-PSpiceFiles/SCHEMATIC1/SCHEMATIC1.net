@@ -1,0 +1,7 @@
+* source ORCAD4WEEK2
+R_R1         N00119 N00123  1k TC=0,0 
+R_R2         N00115 N00123  2k TC=0,0 
+R_R3         0 N00119  2k TC=0,0 
+R_R4         0 N00115  1k TC=0,0 
+V_V1         N00123 0 10V
+R_R5         N00119 N00115  500 TC=0,0 

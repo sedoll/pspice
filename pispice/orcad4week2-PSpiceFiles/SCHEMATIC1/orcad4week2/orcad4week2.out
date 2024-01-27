@@ -1,0 +1,88 @@
+
+**** 04/07/20 11:05:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad4week2"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad4week2-PSpiceFiles\SCHEMATIC1\orcad4week2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad4week2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD4WEEK2
+R_R1         N00119 N00123  1k TC=0,0 
+R_R2         N00115 N00123  2k TC=0,0 
+R_R3         0 N00119  2k TC=0,0 
+R_R4         0 N00115  1k TC=0,0 
+V_V1         N00123 0 10V
+R_R5         N00119 N00115  500 TC=0,0 
+
+**** RESUMING orcad4week2.cir ****
+.END
+
+**** 04/07/20 11:05:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad4week2"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad4week2-PSpiceFiles\SCHEMATIC1\orcad4week2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00115)    4.5455 (N00119)    5.4545 (N00123)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -7.273E-03
+
+    TOTAL POWER DISSIPATION   7.27E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/07/20 11:05:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad4week2"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad4week2-PSpiceFiles\SCHEMATIC1\orcad4week2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

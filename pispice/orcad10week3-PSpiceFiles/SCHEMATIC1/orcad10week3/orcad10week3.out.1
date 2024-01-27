@@ -1,0 +1,43 @@
+
+**** 05/20/20 12:15:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad10week3"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad10week3-PSpiceFiles\SCHEMATIC1\orcad10week3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad10week3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN Vdc -1 1 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD10WEEK3
+V_V1         N00115 0 {Vdc}
+R_R1         N00108 N00115  10 TC=0,0 
+D_D1         N00108 0 D1N4148 
+
+**** RESUMING orcad10week3.cir ****
+.END
+
+
+ERROR(ORPSIM-15167): Undefined parameter: Vdc.
+

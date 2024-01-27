@@ -1,0 +1,11 @@
+* source ORCAD14WEEK12
+X_U1A         N02526 N02411 V+ V- N02471 LM324
+V_V2         V+ 0 5
+V_V3         V- 0 -5
+R_R4         N02526 0  {rval} TC=0,0 
+R_R6         N02411 N00214  18k TC=0,0 
+R_R7         N02411 N02471  18k TC=0,0 
+C_C1         N02526 N00214  1.8n  TC=0,0 
+V_V4         N00214 0  
++SIN 0 1 5k 0 0 0
+.PARAM  rval=11k

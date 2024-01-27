@@ -1,0 +1,67 @@
+* C:\Users\OHSEHOON\Desktop\pispice\orcad13week9-PSpiceFiles\ORCAD13WEEK9.stl written on Wed Jun 10 15:34:44 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! I0 Digital I1 Digital I2 Digital I3 Digital I4 Digital I5 Digital I6 Digital I7 Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 6.4us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS I1 STIM (1, 1) ;! CLOCKP 1.6u 0.1u 0 0.2u
++   +0s 0
++   +200ns 1
++   Repeat Forever
++      +100ns 0
++      +1.5us 1
++   EndRepeat
+.STIMULUS I0 STIM (1, 1) ;! CLOCKP 1.6u 0.1u 1 0.1u
++   +0s 1
++   +100ns 0
++   Repeat Forever
++      +1.5us 1
++      +100ns 0
++   EndRepeat
+.STIMULUS I2 STIM (1, 1) ;! CLOCKP 1.6u 0.1u 0 0.4u
++   +0s 0
++   +400ns 1
++   Repeat Forever
++      +100ns 0
++      +1.5us 1
++   EndRepeat
+.STIMULUS I3 STIM (1, 1) ;! CLOCKP 1.6u 0.1u 0 0.6u
++   +0s 0
++   +600ns 1
++   Repeat Forever
++      +100ns 0
++      +1.5us 1
++   EndRepeat
+.STIMULUS I4 STIM (1, 1) ;! CLOCKP 1.6u 0.1u 0 0.8u
++   +0s 0
++   +800ns 1
++   Repeat Forever
++      +100ns 0
++      +1.5us 1
++   EndRepeat
+.STIMULUS I5 STIM (1, 1) ;! CLOCKP 1.6u 0.1u 0 1u
++   +0s 0
++   +1us 1
++   Repeat Forever
++      +100ns 0
++      +1.5us 1
++   EndRepeat
+.STIMULUS I6 STIM (1, 1) ;! CLOCKP 1.6u 0.1u 0 1.2u
++   +0s 0
++   +1.2us 1
++   Repeat Forever
++      +100ns 0
++      +1.5us 1
++   EndRepeat
+.STIMULUS I7 STIM (1, 1) ;! CLOCKP 1.6u 0.1u 0 1.4u
++   +0s 0
++   +1.4us 1
++   Repeat Forever
++      +100ns 0
++      +1.5us 1
++   EndRepeat

@@ -1,0 +1,25 @@
+* C:\Users\OHSEHOON\Desktop\pispice\t2-PSpiceFiles\SCHEMATIC1\bias\bias.stl written on Wed Mar 25 12:55:39 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! IN1 Digital IN2 Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 160ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS IN1 STIM (1, 1) ;! CLOCKP 20ms 10ms 0 0
++   +0s 0
++   +10ms 1
++   Repeat Forever
++      +10ms 0
++      +10ms 1
++   EndRepeat
+.STIMULUS IN2 STIM (1, 1) ;! CLOCKP 40ms 20ms 0 0
++   +0s 0
++   +20ms 1
++   Repeat Forever
++      +20ms 0
++      +20ms 1
++   EndRepeat

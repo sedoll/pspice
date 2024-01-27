@@ -1,0 +1,39 @@
+* C:\Users\OHSEHOON\Desktop\pispice\orcad13week7-PSpiceFiles\SCHEMATIC1\orcad13week6\orcad13week6.stl written on Wed Jun 10 15:05:46 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! A0 Digital B0 Digital A1 Digital B1 Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 6.4us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS B1 STIM (1, 1) ;! CLOCKP 1.6u 0.8u 0 0
++   +0s 0
++   +800ns 1
++   Repeat Forever
++      +800ns 0
++      +800ns 1
++   EndRepeat
+.STIMULUS A1 STIM (1, 1) ;! CLOCKP 0.8u 0.4u 0 0
++   +0s 0
++   +400ns 1
++   Repeat Forever
++      +400ns 0
++      +400ns 1
++   EndRepeat
+.STIMULUS B0 STIM (1, 1) ;! CLOCKP 0.4u 0.2u 0 0
++   +0s 0
++   +200ns 1
++   Repeat Forever
++      +200ns 0
++      +200ns 1
++   EndRepeat
+.STIMULUS A0 STIM (1, 1) ;! CLOCKP 0.2u 0.1u 0 0
++   +0s 0
++   +100ns 1
++   Repeat Forever
++      +100ns 0
++      +100ns 1
++   EndRepeat

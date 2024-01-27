@@ -1,0 +1,88 @@
+
+**** 09/25/19 21:51:09 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test_21"  [ C:\Users\OHSEHOON\Desktop\test_21-PSpiceFiles\SCHEMATIC1\test_21.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test_21.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TEST_21
+R_R2         0 N01295  5 TC=0,0 
+R_R3         N01505 N01009  6 TC=0,0 
+R_R1         0 N01295  5 TC=0,0 
+V_V1         N01009 0 10Vdc
+R_R4         N01009 N01505  4 TC=0,0 
+R_R6         N01295 N01505  0.000001 TC=0,0 
+
+**** RESUMING test_21.cir ****
+.END
+
+**** 09/25/19 21:51:09 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test_21"  [ C:\Users\OHSEHOON\Desktop\test_21-PSpiceFiles\SCHEMATIC1\test_21.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01009)   10.0000 (N01295)    5.1020 (N01505)    5.1020 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.041E+00
+
+    TOTAL POWER DISSIPATION   2.04E+01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/25/19 21:51:09 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test_21"  [ C:\Users\OHSEHOON\Desktop\test_21-PSpiceFiles\SCHEMATIC1\test_21.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

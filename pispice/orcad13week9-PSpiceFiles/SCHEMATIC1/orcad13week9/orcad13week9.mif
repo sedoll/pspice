@@ -1,0 +1,4 @@
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\dig_io.lib, offset=9827, size=143
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\dig_prim.lib, offset=15937, size=254
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\dig_prim.lib, offset=41531, size=25
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\dig_prim.lib, offset=41633, size=26

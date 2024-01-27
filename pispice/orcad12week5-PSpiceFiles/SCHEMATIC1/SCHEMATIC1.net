@@ -1,0 +1,9 @@
+* source ORCAD12WEEK5
+X_U1A         N00303 N01444 + - N00454 LM324
+V_V1         + 0 15
+V_V2         - 0 -15
+R_R1         0 N00454  3.9k TC=0,0 
+R_R2         0 N01444  1k TC=0,0 
+V_V3         N00303 0  
++SIN 0 0.5 1k 0 0 0
+R_R3         N01444 N00454  2k TC=0,0 

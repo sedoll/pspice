@@ -1,0 +1,4 @@
+* source ORCAD10WEEK4
+V_V1         N00211 0 0Vdc
+R_R1         N00235 N00211  1 TC=0,0 
+D_D1         N00235 0 D1N4148 

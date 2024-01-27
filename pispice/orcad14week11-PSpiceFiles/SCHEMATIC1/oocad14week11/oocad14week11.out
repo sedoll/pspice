@@ -1,0 +1,90 @@
+
+**** 06/16/20 14:47:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-oocad14week11"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad14week11-PSpiceFiles\SCHEMATIC1\oocad14week11.sim ]
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "oocad14week11.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 10mega
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD14WEEK11
+V_V1         N00131 0 DC 0Vdc AC 1Vac 
+R_R3         N00131 N00126  100k TC=0,0 
+R_R4         N00126 N01547  100k TC=0,0 
+R_R5         0 N01512  50k TC=0,0 
+C_C1         N00131 N01512  0.1u  TC=0,0 
+C_C2         N01512 N01547  0.1u  TC=0,0 
+C_C3         0 N00126  0.2u  TC=0,0 
+
+**** RESUMING oocad14week11.cir ****
+.END
+
+**** 06/16/20 14:47:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-oocad14week11"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad14week11-PSpiceFiles\SCHEMATIC1\oocad14week11.sim ]
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00126)    0.0000 (N00131)    0.0000 (N01512)    0.0000 (N01547)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/16/20 14:47:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-oocad14week11"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad14week11-PSpiceFiles\SCHEMATIC1\oocad14week11.sim ]
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =         .78
+  Total job time (using Solver 1)   =         .27
+

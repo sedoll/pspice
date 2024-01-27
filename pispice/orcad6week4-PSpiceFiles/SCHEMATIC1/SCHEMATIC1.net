@@ -1,0 +1,12 @@
+* source ORCAD6WEEK4
+V_V1         N00249 N00274  AC 0
++SIN 0 170V 60Hz 0 0 0
+L_L1         N00249 N00256  1m  
+L_L2         N00301 N00326  1u  
+R_R1         N00256 N00260  1m TC=0,0 
+R_R2         0 N00326  20 TC=0,0 
+C_C1         0 N00326  1000u  TC=0,0 
+D_D1         N00260 N00301 Dbreak 
+D_D2         N00274 N00301 Dbreak 
+D_D3         0 N00274 Dbreak 
+D_D4         0 N00260 Dbreak 

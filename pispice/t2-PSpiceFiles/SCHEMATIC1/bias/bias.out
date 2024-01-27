@@ -1,0 +1,147 @@
+
+**** 03/25/20 13:03:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\OHSEHOON\Desktop\pispice\t2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "C:\Users\OHSEHOON\Desktop\pispice\t2-pspicefiles\schematic1\bias\bias_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+**** INCLUDING bias_profile.inc ****
+.STMLIB ".\bias.stl" 
+
+**** RESUMING bias.cir ****
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 40ms 0 1m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source T2
+X_U1A         N1 N2 OUT $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM1         STIM(1,0) $G_DPWR $G_DGND N1 IO_STM STIMULUS=IN1
+U_DSTM2         STIM(1,0) $G_DPWR $G_DGND N2 IO_STM STIMULUS=IN2
+
+**** RESUMING bias.cir ****
+.END
+
+* C:\Users\OHSEHOON\Desktop\pispice\t2-PSpiceFiles\SCHEMATIC1\bias\bias.stl written on Wed Mar 25 12:55:39 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! IN1 Digital IN2 Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 160ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS IN1 STIM (1, 1) ;! CLOCKP 20ms 10ms 0 0
++   +0s 0
++   +10ms 1
++   Repeat Forever
++      +10ms 0
++      +10ms 1
++   EndRepeat
+.STIMULUS IN2 STIM (1, 1) ;! CLOCKP 40ms 20ms 0 0
++   +0s 0
++   +20ms 1
++   Repeat Forever
++      +20ms 0
++      +20ms 1
++   EndRepeat
+
+**** 03/25/20 13:03:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\OHSEHOON\Desktop\pispice\t2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_00            
+      TPLHMN    4.400000E-09 
+      TPLHTY   11.000000E-09 
+      TPLHMX   22.000000E-09 
+      TPHLMN    2.800000E-09 
+      TPHLTY    7.000000E-09 
+      TPHLMX   15.000000E-09 
+
+
+**** 03/25/20 13:03:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\OHSEHOON\Desktop\pispice\t2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          
+        DRVL    0             104            
+        DRVH    0              96.4          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        
+      TSWHL1                    1.511000E-09 
+      TSWHL2                    1.487000E-09 
+      TSWHL3                    1.511000E-09 
+      TSWHL4                    1.487000E-09 
+      TSWLH1                    3.517000E-09 
+      TSWLH2                    3.564000E-09 
+      TSWLH3                    3.517000E-09 
+      TSWLH4                    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+
+          JOB CONCLUDED
+
+**** 03/25/20 13:03:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\OHSEHOON\Desktop\pispice\t2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time                    =         .09
+

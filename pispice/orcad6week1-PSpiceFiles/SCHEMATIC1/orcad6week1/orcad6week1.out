@@ -1,0 +1,109 @@
+
+**** 04/20/20 23:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week1"  [ c:\users\ohsehoon\desktop\pispice\orcad6week1-pspicefiles\schematic1\orcad6week1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad6week1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC LIN 501 10 100k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD6WEEK1
+V_V1         N00385 N00506 DC 0  
+V_V2         N00385 N00499 DC 0  
+V_V3         N00385 N00495 DC 0  
+V_V4         N00385 N00491 DC 0  
+V_V5         N00385 0  AC 1V 
+R_R1         N00472 N00506  50 TC=0,0 
+R_R2         N00476 N00499  50 TC=0,0 
+R_R3         N00480 N00495  50 TC=0,0 
+R_R4         N00487 N00491  50 TC=0,0 
+L_L1         N00468 N00472  10m  
+L_L2         N00464 N00476  15m  
+L_L3         N00460 N00480  20m  
+L_L4         N00456 N00487  25m  
+C_C1         0 N00468  1u  TC=0,0 
+C_C2         0 N00464  1u  TC=0,0 
+C_C3         0 N00460  1u  TC=0,0 
+C_C4         0 N00456  1u  TC=0,0 
+
+**** RESUMING orcad6week1.cir ****
+.END
+
+**** 04/20/20 23:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week1"  [ c:\users\ohsehoon\desktop\pispice\orcad6week1-pspicefiles\schematic1\orcad6week1.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00385)    0.0000 (N00456)    0.0000 (N00460)    0.0000 (N00464)    0.0000     
+
+(N00468)    0.0000 (N00472)    0.0000 (N00476)    0.0000 (N00480)    0.0000     
+
+(N00487)    0.0000 (N00491)    0.0000 (N00495)    0.0000 (N00499)    0.0000     
+
+(N00506)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+    V_V3         0.000E+00
+    V_V4         0.000E+00
+    V_V5         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/20/20 23:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week1"  [ c:\users\ohsehoon\desktop\pispice\orcad6week1-pspicefiles\schematic1\orcad6week1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .13
+

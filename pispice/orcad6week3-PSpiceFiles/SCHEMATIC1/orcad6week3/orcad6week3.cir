@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-orcad6week3"  [ c:\users\ohsehoon\desktop\pispice\orcad6week3-pspicefiles\schematic1\orcad6week3.sim ] 
+
+** Creating circuit file "orcad6week3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC LIN 101 10 100k
+.NOISE V(R_R4) V_V1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

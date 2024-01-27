@@ -1,0 +1,5 @@
+* source ORCAD
+V_V1         N00121 0 9V
+R_R1         N00121 N00099  1k TC=0,0 
+R_R2         N00106 N00099  4.7k TC=0,0 
+R_R3         0 N00106  3.3k TC=0,0 

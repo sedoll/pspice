@@ -1,0 +1,82 @@
+
+**** 04/20/20 22:39:49 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week1"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad6week1-PSpiceFiles\SCHEMATIC1\orcad6week1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad6week1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC LIN 501 10 100k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD6WEEK1
+V_V1         N00385 N00506 DC 0  
+V_V2         N00385 N00499 DC 0  
+V_V3         N00385 N00495 DC 0  
+V_V4         N00385 N00491 DC 0  
+V_V5         N00385 N00397  AC 1V 
+R_R1         N00472 N00506  50 TC=0,0 
+R_R2         N00476 N00499  50 TC=0,0 
+R_R3         N00480 N00495  50 TC=0,0 
+R_R4         N00487 N00491  50 TC=0,0 
+L_L1         N00468 N00472  10m  
+L_L2         N00464 N00476  15m  
+L_L3         N00460 N00480  20m  
+L_L4         N00456 N00487  25m  
+C_C1         N00397 N00468  1u  TC=0,0 
+C_C2         N00397 N00464  1u  TC=0,0 
+C_C3         N00397 N00460  1u  TC=0,0 
+C_C4         N00397 N00456  1u  TC=0,0 
+
+**** RESUMING orcad6week1.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00385 is floating
+
+ERROR(ORPSIM-15142): Node N00506 is floating
+
+ERROR(ORPSIM-15142): Node N00499 is floating
+
+ERROR(ORPSIM-15142): Node N00495 is floating
+
+ERROR(ORPSIM-15142): Node N00491 is floating
+
+ERROR(ORPSIM-15142): Node N00397 is floating
+
+ERROR(ORPSIM-15142): Node N00472 is floating
+
+ERROR(ORPSIM-15142): Node N00476 is floating
+
+ERROR(ORPSIM-15142): Node N00480 is floating
+
+ERROR(ORPSIM-15142): Node N00487 is floating
+
+ERROR(ORPSIM-15142): Node N00468 is floating
+
+ERROR(ORPSIM-15142): Node N00464 is floating
+
+ERROR(ORPSIM-15142): Node N00460 is floating
+
+ERROR(ORPSIM-15142): Node N00456 is floating
+

@@ -1,0 +1,6 @@
+* source ORCAD9WEEK2
+V_V1         N00169 0  
++PULSE 0 10 0.5m 0.1n 0.1n 1m 2m
+C_C1         N00169 N00158  0.01uF  TC=0,0 
+R_R1         0 N00158  {rval} TC=0,0 
+.PARAM  rval=1k

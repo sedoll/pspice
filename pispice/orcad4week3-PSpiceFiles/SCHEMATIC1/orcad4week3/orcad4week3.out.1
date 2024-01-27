@@ -1,0 +1,57 @@
+
+**** 04/07/20 11:23:47 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad4week3"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad4week3-PSpiceFiles\SCHEMATIC1\orcad4week3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad4week3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 50m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD4WEEK3
+R_R1         0 N00104  1k TC=0,0 
+V_V2         N00113 0  AC 0
++SIN 0 5 60Hz 0 0 0
+D_D1         N00113 N00104 D1N4148_1 
+V_V3         N00911 N00935  AC 0
++SIN 0 5 60Hz 0 0 0
+D_D2         N00911 N00883 D1N4148_1 
+D_D3         N00896 N00911 D1N4148_1 
+D_D4         N00896 N00935 D1N4148_1 
+D_D5         N00935 N00883 D1N4148_1 
+R_R2         N00896 N00883  1k TC=0,0 
+C_C1         N00896 N00883  100uF  TC=0,0 
+
+**** RESUMING orcad4week3.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00911 is floating
+
+ERROR(ORPSIM-15142): Node N00935 is floating
+
+ERROR(ORPSIM-15142): Node N00883 is floating
+
+ERROR(ORPSIM-15142): Node N00896 is floating
+

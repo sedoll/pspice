@@ -1,0 +1,213 @@
+
+**** 06/16/20 14:24:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad14week8"  [ c:\users\ohsehoon\desktop\pispice\orcad14week8-pspicefiles\schematic1\orcad14week8.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad14week8.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 3m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD14WEEK8
+X_U1         N00567 N00586 V+ V- N00831 uA741
+R_R1         N00230 N00586  1k TC=0,0 
+R_R2         N00835 N01656  1k TC=0,0 
+V_V2         V+ 0 15V
+V_V3         V- 0 -15V
+R_R3         0 N00567  680 TC=0,0 
+V_V4         N00230 0  
++SIN 0 2 1k 0 0 0
+D_D1         N00586 N00831 D1N4148 
+R_R4         N00586 N00835  2k TC=0,0 
+D_D2         N00835 N00831 D1N4148 
+X_U2         N01845 N01656 V+ V- N01786 uA741
+R_R5         N01656 N01786  1k TC=0,0 
+R_R6         N00586 N01656  1k TC=0,0 
+R_R7         0 N01786  1k TC=0,0 
+R_R8         0 N01845  470 TC=0,0 
+
+**** RESUMING orcad14week8.cir ****
+.END
+
+**** 06/16/20 14:24:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad14week8"  [ c:\users\ohsehoon\desktop\pispice\orcad14week8-pspicefiles\schematic1\orcad14week8.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         X_U1.dx         X_U1.dy         X_U2.dx         
+          IS    2.682000E-09  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    1.836                                                        
+         ISR    1.565000E-09                                                 
+         IKF     .04417                                                      
+          BV  100                                                            
+         IBV  100.000000E-06                                                 
+          RS     .5664          1               1.000000E-03    1            
+          TT   11.540000E-09                                                 
+         CJO    4.000000E-12                   10.000000E-12                 
+          VJ     .5                                                          
+           M     .3333                                                       
+
+
+               X_U2.dy         
+          IS  800.000000E-18 
+          RS    1.000000E-03 
+         CJO   10.000000E-12 
+
+
+**** 06/16/20 14:24:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad14week8"  [ c:\users\ohsehoon\desktop\pispice\orcad14week8-pspicefiles\schematic1\orcad14week8.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         X_U2.qx         
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 06/16/20 14:24:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad14week8"  [ c:\users\ohsehoon\desktop\pispice\orcad14week8-pspicefiles\schematic1\orcad14week8.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00230)    0.0000 (N00567)-54.22E-06     
+
+(N00586)-41.68E-06 (N00831)    1.3404 (N00835)-22.64E-06 (N01656)-18.22E-06     
+
+(N01786) 89.42E-06 (N01845)-37.47E-06 (X_U1.6)-126.3E-06 (X_U1.7)    1.3404     
+
+(X_U1.8)    1.3404 (X_U1.9)    0.0000 (X_U2.6)-11.60E-09 (X_U2.7) 99.28E-06     
+
+(X_U2.8) 99.28E-06 (X_U2.9)    0.0000 (X_U1.10)    -.6077                       
+
+(X_U1.11)   14.9600                   (X_U1.12)   14.9600                       
+
+(X_U1.13)    -.5938                   (X_U1.14)    -.5938                       
+
+(X_U1.53)   14.0000                   (X_U1.54)  -14.0000                       
+
+(X_U1.90) 10.20E-06                   (X_U1.91)   40.0000                       
+
+(X_U1.92)  -40.0000                   (X_U1.99)    0.0000                       
+
+(X_U2.10)    -.6077                   (X_U2.11)   14.9600                       
+
+(X_U2.12)   14.9600                   (X_U2.13)    -.5938                       
+
+(X_U2.14)    -.5938                   (X_U2.53)   14.0000                       
+
+(X_U2.54)  -14.0000                   (X_U2.90) 197.1E-06                       
+
+(X_U2.91)   40.0000                   (X_U2.92)  -40.0000                       
+
+(X_U2.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -3.334E-03
+    V_V3         3.334E-03
+    V_V4        -4.168E-08
+    X_U1.vb     -1.263E-09
+    X_U1.vc      1.266E-11
+    X_U1.ve      1.726E-11
+    X_U1.vlim    1.020E-08
+    X_U1.vlp    -4.000E-11
+    X_U1.vln    -4.000E-11
+    X_U2.vb     -1.160E-13
+    X_U2.vc      1.400E-11
+    X_U2.ve      1.592E-11
+    X_U2.vlim    1.971E-07
+    X_U2.vlp    -4.000E-11
+    X_U2.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   1.00E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/16/20 14:24:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad14week8"  [ c:\users\ohsehoon\desktop\pispice\orcad14week8-pspicefiles\schematic1\orcad14week8.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .58
+

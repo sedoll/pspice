@@ -1,0 +1,5 @@
+* source ORCAD7WEEK3
+V_V1         N00083 0 1
+R_R1         N00083 N00087  1k TC=0,0 
+R_R2         0 N00087  {rval} TC=0,0 
+.PARAM  rval=1k

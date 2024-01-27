@@ -1,0 +1,155 @@
+
+**** 06/10/20 16:41:18 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad13week10"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad13week11-PSpiceFiles\SCHEMATIC1\orcad13week10.sim ]
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad13week10.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../orcad13week11-pspicefiles/orcad13week11.stl" 
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD13WEEK11
+U_S         STIM(1,0) $G_DPWR $G_DGND N00463 IO_STM STIMULUS=S
+U_R         STIM(1,0) $G_DPWR $G_DGND N00489 IO_STM STIMULUS=R
+X_U1A         N00463 N00467 N00403 $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1B         N00467 N00489 N00410 $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1C         N00403 -Q Q $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1D         Q N00410 -Q $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND N00467 IO_STM IO_LEVEL=0 
++ 0 1
++ +0.1u 0
++REPEAT FOREVER
++ +0.1u 1
++  +0.1u 0
++ ENDREPEAT
+
+**** RESUMING orcad13week10.cir ****
+.END
+
+* C:\USERS\OHSEHOON\DESKTOP\PISPICE\orcad13week11-pspicefiles\orcad13week11.stl written on Wed Jun 10 16:41:05 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! S Digital R Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 3.2us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS R STIM (1, 1) ;! CLOCKP 0.4u 0.2u 1 0
++   +0s 1
++   +200ns 0
++   Repeat Forever
++      +200ns 1
++      +200ns 0
++   EndRepeat
+.STIMULUS S STIM (1, 1) ;! CLOCKP 0.8u 0.2u 1 0
++   +0s 1
++   +200ns 0
++   Repeat Forever
++      +600ns 1
++      +200ns 0
++   EndRepeat
+
+**** 06/10/20 16:41:18 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad13week10"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad13week11-PSpiceFiles\SCHEMATIC1\orcad13week10.sim ]
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_00            
+      TPLHMN    4.400000E-09 
+      TPLHTY   11.000000E-09 
+      TPLHMX   22.000000E-09 
+      TPHLMN    2.800000E-09 
+      TPHLTY    7.000000E-09 
+      TPHLMX   15.000000E-09 
+
+
+**** 06/10/20 16:41:18 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad13week10"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad13week11-PSpiceFiles\SCHEMATIC1\orcad13week10.sim ]
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          
+        DRVL    0             104            
+        DRVH    0              96.4          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        
+      TSWHL1                    1.511000E-09 
+      TSWHL2                    1.487000E-09 
+      TSWHL3                    1.511000E-09 
+      TSWHL4                    1.487000E-09 
+      TSWLH1                    3.517000E-09 
+      TSWLH2                    3.564000E-09 
+      TSWLH3                    3.517000E-09 
+      TSWLH4                    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+
+          JOB CONCLUDED
+
+**** 06/10/20 16:41:18 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad13week10"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad13week11-PSpiceFiles\SCHEMATIC1\orcad13week10.sim ]
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time                    =         .09
+

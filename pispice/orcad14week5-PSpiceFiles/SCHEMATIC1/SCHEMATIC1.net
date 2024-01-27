@@ -1,0 +1,4 @@
+* source ORCAD14WEEK5
+Q_Q2         N00426 N00437 0 Q2N2907A
+I_I2         N00437 0 DC 0Adc  
+V_V2         0 N00426 0Vdc

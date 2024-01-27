@@ -1,0 +1,4 @@
+* source SIMPLE_RC_FILTER
+R_R1         0 N00171  1k TC=0,0 
+V_V1         N00107 0 DC 0Vdc AC 1Vac 
+C_C1         N00171 N00107  1u  TC=0,0 

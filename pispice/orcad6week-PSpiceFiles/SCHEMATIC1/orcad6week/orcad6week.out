@@ -1,0 +1,1359 @@
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad6week.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5us 0 
+.STEP LIN PARAM Cvar 100p 700p 25p 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD6WEEK
+R_R1         N00218 N00196  1k TC=0,0 
+R_R2         N00231 N00218  1k TC=0,0 
+R_R3         0 N00231  1k TC=0,0 
+R_R4         N00326 N00231  1k TC=0,0 
+R_R5         N00603 N00196  1k TC=0,0 
+C_C2         0 N00231  1n  TC=0,0 
+V_V1         N00326 0  
++PULSE 0 1 0.1u 0.01u 
+V_V2         V+ 0 15V
+V_V3         V- 0 -15V
+X_U3         N00218 0 V+ V- N00196 LF411
+C_C3         0 N00603  {Cvar}  TC=0,0 
+.PARAM  cvar=1n
+
+**** RESUMING orcad6week.cir ****
+.END
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.dx         X_U3.dy         
+          IS  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.jx         
+               NJF             
+         VTO   -1            
+        BETA  743.300000E-06 
+          IS   12.500000E-12 
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  100.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  125.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  150.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  175.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  200.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  225.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  250.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  275.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  300.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  325.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  350.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  375.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  400.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  425.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  450.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  475.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  500.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  525.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  550.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  575.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  600.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  625.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  650.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  675.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =  700.0000E-12
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (N00196) 5.472E-06 (N00218) 3.308E-06     
+
+(N00231) 1.103E-06 (N00326)    0.0000 (N00603) 5.472E-06 (X_U3.6)-323.2E-09     
+
+(X_U3.7) 5.581E-06 (X_U3.8) 5.581E-06 (X_U3.9)    0.0000 (X_U3.10)     .6613    
+
+(X_U3.11)   14.6610                   (X_U3.12)   14.6610                       
+
+(X_U3.53)   13.5000                   (X_U3.54)  -13.5000                       
+
+(X_U3.90) 2.165E-06                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.103E-09
+    V_V2        -2.171E-03
+    V_V3         2.170E-03
+    X_U3.vb     -3.232E-12
+    X_U3.vc      1.350E-11
+    X_U3.ve      1.535E-11
+    X_U3.vlim    2.165E-09
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/20/20 23:56:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week"  [ c:\users\ohsehoon\desktop\pispice\orcad6week-pspicefiles\schematic1\orcad6week.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM CVAR =  700.0000E-12
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        4.20
+

@@ -1,0 +1,7 @@
+* source ORCAD11WEEK6
+Q_Q1         N01791 N01671 N01648 Q2N2222
+V_V2         N01656 0 12V
+R_R1         N01791 N01656  3.3k TC=0,0 
+R_R2         N01671 N01656  68k TC=0,0 
+R_R3         0 N01671  24k TC=0,0 
+R_R4         0 N01648  2k TC=0,0 

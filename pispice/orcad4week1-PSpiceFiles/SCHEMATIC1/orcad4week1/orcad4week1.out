@@ -1,0 +1,93 @@
+
+**** 04/07/20 10:33:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad4week1"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad4week1-PSpiceFiles\SCHEMATIC1\orcad4week1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad4week1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD4WEEK1
+V_V1         N00163 0 10V
+V_V2         N00197 0 10V
+R_R1         N00163 N00170  450 TC=0,0 
+R_R2         N00183 N00170  330 TC=0,0 
+R_R3         0 N00183  220 TC=0,0 
+R_R4         N00197 N00207  500 TC=0,0 
+R_R5         0 N00207  500 TC=0,0 
+R_R6         0 N00207  750 TC=0,0 
+
+**** RESUMING orcad4week1.cir ****
+.END
+
+**** 04/07/20 10:33:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad4week1"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad4week1-PSpiceFiles\SCHEMATIC1\orcad4week1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00163)   10.0000 (N00170)    5.5000 (N00183)    2.2000 (N00197)   10.0000     
+
+(N00207)    3.7500 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.000E-02
+    V_V2        -1.250E-02
+
+    TOTAL POWER DISSIPATION   2.25E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/07/20 10:33:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad4week1"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad4week1-PSpiceFiles\SCHEMATIC1\orcad4week1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

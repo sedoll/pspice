@@ -1,0 +1,47 @@
+
+**** 06/16/20 12:15:56 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad14week5"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad14week5-PSpiceFiles\SCHEMATIC1\orcad14week5.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad14week5.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V2 0 5 0.1 
+.STEP LIN I_I2 0 200u 40u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD14WEEK5
+Q_Q2         N00426 N00437 N00430 Q2N2907A
+I_I2         N00437 N00430 DC 0Adc  
+V_V2         N00430 N00426 0Vdc
+
+**** RESUMING orcad14week5.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00426 is floating
+
+ERROR(ORPSIM-15142): Node N00437 is floating
+
+ERROR(ORPSIM-15142): Node N00430 is floating
+

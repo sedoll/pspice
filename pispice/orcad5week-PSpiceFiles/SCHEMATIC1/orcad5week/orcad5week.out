@@ -1,0 +1,58 @@
+
+**** 04/15/20 09:14:50 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad5week"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad5week-PSpiceFiles\SCHEMATIC1\orcad5week.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad5week.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 10 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD5WEEK
+V_V1         N00148 0 DC 10 AC 0 
+R_R1         N00148 N00120  1k TC=0,0 
+R_R2         0 N00120  1k TC=0,0 
+C_C1         0 N00120  1n  TC=0,0 
+
+**** RESUMING orcad5week.cir ****
+.END
+
+
+          JOB CONCLUDED
+
+**** 04/15/20 09:14:50 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad5week"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad5week-PSpiceFiles\SCHEMATIC1\orcad5week.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

@@ -1,0 +1,8 @@
+* source ORCAD12WEEK1
+V_V1         N00233 0  
++SIN 0 10m 1k 0 0 0
+C_C1         N00233 N00214  1n  TC=0,0 
+R_R1         N00214 N00180  390k TC=0,0 
+R_R2         N00221 N00180  1k TC=0,0 
+Q_Q1         N00221 N00214 0 Q2N2222
+V_V2         N00180 0 20

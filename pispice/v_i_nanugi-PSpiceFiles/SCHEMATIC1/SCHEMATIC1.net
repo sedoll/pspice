@@ -1,0 +1,4 @@
+* source V_I_NANUGI
+R_R1         N00092 N00083  1k TC=0,0 
+R_R2         0 N00083  6k TC=0,0 
+V_V1         N00092 0 7V

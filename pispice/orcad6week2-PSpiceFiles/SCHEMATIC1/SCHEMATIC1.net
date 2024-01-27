@@ -1,0 +1,5 @@
+* source ORCAD6WEEK2
+V_V1         N00152 0  AC 100V 
+R_R1         N00152 N00120  200 TC=0,0 
+R_R2         0 N00120  400 TC=0,0 
+C_C1         0 N00120  10u  TC=0,0 

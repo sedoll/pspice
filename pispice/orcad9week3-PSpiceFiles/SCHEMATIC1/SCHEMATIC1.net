@@ -1,0 +1,6 @@
+* source ORCAD9WEEK3
+V_V1         N00274 0  
++PULSE 0 10 0.5m 0.1n 0.1n 1m 2m
+L_L1         0 N00282  {lval}  
+R_R1         N00274 N00282  100 TC=0,0 
+.PARAM  lval=1mh

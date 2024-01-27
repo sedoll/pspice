@@ -1,0 +1,4 @@
+* source ORCAD11WEEK5
+Q_Q1         N01166 N01178 0 Q2N2222
+V_V2         N01166 0 2
+V_V1         N01178 0 1

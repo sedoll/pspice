@@ -1,0 +1,11 @@
+* source ORCAD7WEEK1
+V_V1         N00212 0 DC 1.35  
+V_Meter         N00290 N00241 DC 0  
+R_R5         N00290 N00276  2k TC=0,0 
+R_R8         N00212 N00219 Rbreak 25
+R_R9         0 N00219 Rbreak 470
+R_R10         N00241 N00219 RMonte1 1k
+R_R11         N00276 N00219 RMonte1 1k
+R_R12         0 N00241 RMonte1 1k
+R_R13         0 N00276 Rtherm {1k*(1+P*Pcoeff/Pnom)}
+.PARAM  pcoeff=-0.06 p=0 pnom=1.0

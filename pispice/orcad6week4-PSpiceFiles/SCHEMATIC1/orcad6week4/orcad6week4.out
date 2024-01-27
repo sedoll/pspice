@@ -1,0 +1,114 @@
+
+**** 04/20/20 23:40:08 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week4"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad6week4-PSpiceFiles\SCHEMATIC1\orcad6week4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad6week4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 50m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD6WEEK4
+V_V1         N00249 N00274  AC 0
++SIN 0 170V 60Hz 0 0 0
+L_L1         N00249 N00256  1m  
+L_L2         N00301 N00326  1u  
+R_R1         N00256 N00260  1m TC=0,0 
+R_R2         0 N00326  20 TC=0,0 
+C_C1         0 N00326  1000u  TC=0,0 
+D_D1         N00260 N00301 Dbreak 
+D_D2         N00274 N00301 Dbreak 
+D_D3         0 N00274 Dbreak 
+D_D4         0 N00260 Dbreak 
+
+**** RESUMING orcad6week4.cir ****
+.END
+
+**** 04/20/20 23:40:08 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week4"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad6week4-PSpiceFiles\SCHEMATIC1\orcad6week4.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+          RS     .1          
+         CJO  100.000000E-15 
+
+
+**** 04/20/20 23:40:08 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week4"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad6week4-PSpiceFiles\SCHEMATIC1\orcad6week4.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00249) 1.674E-18 (N00256) 1.674E-18 (N00260) 1.674E-18 (N00274) 1.674E-18     
+
+(N00301)-10.24E-24 (N00326)-10.24E-24 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/20/20 23:40:08 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad6week4"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad6week4-PSpiceFiles\SCHEMATIC1\orcad6week4.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+

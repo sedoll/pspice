@@ -1,0 +1,131 @@
+
+**** 04/29/20 11:04:07 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad7week1"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad7week1-PSpiceFiles\SCHEMATIC1\orcad7week1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad7week1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../orcad7week1-pspicefiles/orcad7week1.lib" 
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM P 0 5 0.1 
+.MC 10 DC I(V_Meter) YMAX OUTPUT ALL 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD7WEEK1
+V_V1         N00212 0 DC 1.35  
+V_Meter         N00290 N00241 DC 0  
+R_R5         N00290 N00276  2k TC=0,0 
+R_R8         N00212 N00219 Rbreak 25
+R_R9         0 N00219 Rbreak 470
+R_R10         N00241 N00219 RMonte1 1k
+R_R11         N00276 N00219 RMonte1 1k
+R_R12         0 N00241 RMonte1 1k
+R_R13         0 N00276 Rtherm {1k*(1+P*Pcoeff/Pnom)}
+.PARAM  pcoeff=-0.06 p=0 pnom=1.0
+
+**** RESUMING orcad7week1.cir ****
+.END
+
+**** 04/29/20 11:04:07 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad7week1"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad7week1-PSpiceFiles\SCHEMATIC1\orcad7week1.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               RMonte1         Rtherm          Rbreak          
+           R    1               1               1            
+
+
+**** 04/29/20 11:04:07 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad7week1"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad7week1-PSpiceFiles\SCHEMATIC1\orcad7week1.sim ] 
+
+
+ ****     SORTED DEVIATIONS OF I(V_Meter)  TEMPERATURE =   27.000 DEG C
+
+                      MONTE CARLO SUMMARY
+
+******************************************************************************
+
+
+
+
+
+Mean Deviation =   -1.7490E-06
+Sigma          =    5.3644E-06
+
+ RUN                    MAX DEVIATION FROM NOMINAL
+
+Pass    7             11.1900E-06  (2.09 sigma)  lower  at P =    0     
+                        (  20.6420E+15% of Nominal)
+
+Pass    3              6.0432E-06  (1.13 sigma)  higher  at P =     .6   
+                        ( -57.538% of Nominal)
+
+Pass    4              5.6537E-06  (1.05 sigma)  lower  at P =    0     
+                        (  10.4290E+15% of Nominal)
+
+Pass    2              5.2639E-06  ( .98 sigma)  lower  at P =    0     
+                        (   9.7101E+15% of Nominal)
+
+Pass    8              5.2277E-06  ( .97 sigma)  higher  at P =    0     
+                        (  -9.6434E+15% of Nominal)
+
+Pass   10              4.3444E-06  ( .81 sigma)  lower  at P =    0     
+                        (   8.0140E+15% of Nominal)
+
+Pass    5              3.6327E-06  ( .68 sigma)  lower  at P =    0     
+                        (   6.7012E+15% of Nominal)
+
+Pass    6              2.2396E-06  ( .42 sigma)  higher  at P =    0     
+                        (  -4.1313E+15% of Nominal)
+
+Pass    9            833.6600E-09  ( .16 sigma)  higher  at P =    5     
+                        (  97.798% of Nominal)
+
+
+
+          JOB CONCLUDED
+
+**** 04/29/20 11:04:07 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad7week1"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad7week1-PSpiceFiles\SCHEMATIC1\orcad7week1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .33
+

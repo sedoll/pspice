@@ -1,0 +1,6 @@
+.ALIASES
+V_V5            V5(+=N00645 -=0 ) CN @ORCAD14WEEK6.SCHEMATIC1(sch_1):INS673@SOURCE.VDC.Normal(chips)
+V_V6            V6(+=N00691 -=0 ) CN @ORCAD14WEEK6.SCHEMATIC1(sch_1):INS701@SOURCE.VDC.Normal(chips)
+M_M2            M2(drain=N00645 gate=N00691 source=0 source=0 ) CN
++@ORCAD14WEEK6.SCHEMATIC1(sch_1):INS818@EVAL.IRF9140.Normal(chips)
+.ENDALIASES

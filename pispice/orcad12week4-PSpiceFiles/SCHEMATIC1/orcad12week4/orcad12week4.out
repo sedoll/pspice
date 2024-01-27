@@ -1,0 +1,128 @@
+
+**** 06/03/20 18:12:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad12week4"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad12week4-PSpiceFiles\SCHEMATIC1\orcad12week4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "orcad12week4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ORCAD12WEEK4
+R_R2         N00597 N00549  3.6k TC=0,0 
+V_V1         N00655 0  
++SIN 0 1m 1k 0 0 0
+C_C1         N01037 N00663  10u  TC=0,0 
+V_V2         N00549 0 20
+R_R1         0 N00663  1mega TC=0,0 
+R_R3         N00655 N01037  47k TC=0,0 
+R_R4         0 N008540  500 TC=0,0 
+R_R5         0 N00911  10k TC=0,0 
+C_C2         N00597 N00911  10u  TC=0,0 
+J_J1         N00597 N00663 N008540 J2N3819 
+
+**** RESUMING orcad12week4.cir ****
+.END
+
+**** 06/03/20 18:12:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad12week4"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad12week4-PSpiceFiles\SCHEMATIC1\orcad12week4.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J2N3819         
+               NJF             
+         VTO   -3            
+        BETA    1.304000E-03 
+      LAMBDA    2.250000E-03 
+          IS   33.570000E-15 
+         ISR  322.400000E-15 
+       ALPHA  311.700000E-06 
+          VK  243.6          
+          RD    1            
+          RS    1            
+         CGD    1.600000E-12 
+         CGS    2.414000E-12 
+           M     .3622       
+       VTOTC   -2.500000E-03 
+     BETATCE    -.5          
+          KF    9.882000E-18 
+
+
+**** 06/03/20 18:12:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad12week4"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad12week4-PSpiceFiles\SCHEMATIC1\orcad12week4.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00549)   20.0000 (N00597)    9.2323 (N00655)    0.0000 (N00663) 1.265E-06     
+
+(N00911)    0.0000 (N01037)    0.0000 (N008540)    1.4955                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -2.991E-03
+
+    TOTAL POWER DISSIPATION   5.98E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/03/20 18:12:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-orcad12week4"  [ C:\Users\OHSEHOON\Desktop\pispice\orcad12week4-PSpiceFiles\SCHEMATIC1\orcad12week4.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

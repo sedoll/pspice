@@ -1,0 +1,87 @@
+
+**** 03/17/20 21:35:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-osh1704082"  [ C:\Users\OHSEHOON\Desktop\orcad\osh1704082-PSpiceFiles\SCHEMATIC1\osh1704082.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "osh1704082.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\OHSEHOON\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 50ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source OSH1704082
+R_R1         N00187 N00201  1 TC=0,0 
+L_L1         N00201 N00208  1mH  
+C_C1         0 N00208  1000uF  TC=0,0 
+V_V2         N00187 0  AC 0
++SIN 0 100 60 0 0 0
+
+**** RESUMING osh1704082.cir ****
+.END
+
+**** 03/17/20 21:35:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-osh1704082"  [ C:\Users\OHSEHOON\Desktop\orcad\osh1704082-PSpiceFiles\SCHEMATIC1\osh1704082.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00187)    0.0000 (N00201)    0.0000 (N00208)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/17/20 21:35:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-osh1704082"  [ C:\Users\OHSEHOON\Desktop\orcad\osh1704082-PSpiceFiles\SCHEMATIC1\osh1704082.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

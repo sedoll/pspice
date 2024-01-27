@@ -1,0 +1,4 @@
+* source ORCAD14WEEK2
+R_R1         N00093 N00086  1k TC=0,0 
+L_L1         N00086 0  100mH  
+V_V2         N00093 0 DC 0Vdc AC 5 

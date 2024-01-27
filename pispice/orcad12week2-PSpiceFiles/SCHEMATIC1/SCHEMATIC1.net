@@ -1,0 +1,6 @@
+* source ORCAD12WEEK2
+V_V2         N00415 0 5
+R_R2         N00463 N00415  1k TC=0,0 
+Q_Q1         N00463 N00529 0 Q2N2222
+R_R3         N00521 N00529  10k TC=0,0 
+V_V1         N00521 0 0Vdc

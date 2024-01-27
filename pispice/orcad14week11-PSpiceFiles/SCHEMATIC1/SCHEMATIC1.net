@@ -1,0 +1,8 @@
+* source ORCAD14WEEK11
+V_V1         N00131 0 DC 0Vdc AC 1Vac 
+R_R3         N00131 N00126  100k TC=0,0 
+R_R4         N00126 N01547  100k TC=0,0 
+R_R5         0 N01512  50k TC=0,0 
+C_C1         N00131 N01512  0.1u  TC=0,0 
+C_C2         N01512 N01547  0.1u  TC=0,0 
+C_C3         0 N00126  0.2u  TC=0,0 

@@ -1,0 +1,4 @@
+* source ORCAD11WEEK4
+V_V1         N00778 0 5
+I_I1         0 N00774 DC 5m  
+Q_Q1         N00778 N00774 0 Q2N2222

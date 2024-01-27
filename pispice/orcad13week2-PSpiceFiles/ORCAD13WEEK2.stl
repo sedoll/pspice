@@ -1,0 +1,25 @@
+* C:\USERS\OHSEHOON\DESKTOP\PISPICE\orcad13week2-pspicefiles\orcad13week2.stl written on Wed Jun 10 13:11:49 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! A Digital B Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 4us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS B STIM (1, 1) ;! CLOCKP 400n 200n 0 0
++   +0s 0
++   +200ns 1
++   Repeat Forever
++      +200ns 0
++      +200ns 1
++   EndRepeat
+.STIMULUS A STIM (1, 1) ;! CLOCKP 1u 0.5u 0 0
++   +0s 0
++   +500ns 1
++   Repeat Forever
++      +500ns 0
++      +500ns 1
++   EndRepeat
